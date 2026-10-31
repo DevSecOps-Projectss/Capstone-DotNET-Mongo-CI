@@ -92,6 +92,7 @@ pipeline {
                     ]) {
                         sh '''
                             set -e
+                            rm -rf Capstone-DotNET-Mongo-CD
                             git clone https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/DevSecOps-Projectss/Capstone-DotNET-Mongo-CD.git
                             cd Capstone-DotNET-Mongo-CD
 
